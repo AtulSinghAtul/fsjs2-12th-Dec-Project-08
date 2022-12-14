@@ -28,7 +28,7 @@
 
 ---
 
-![time taken](https://img.shields.io/badge/Project-08-green) ![time taken](https://img.shields.io/badge/CreditCard%20Landing%20Page-Tailwind%20%26%20CSS-orange)
+![time taken](https://img.shields.io/badge/Project-08-green) ![time taken](https://img.shields.io/badge/Credit%20Card%20Landing%20Page-Tailwind%20%26%20CSS-purple)
 
 
 
