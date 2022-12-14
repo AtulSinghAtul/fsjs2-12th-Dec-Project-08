@@ -1,4 +1,4 @@
-# Project - 07 Tailwind CSS
+# Project - 08 Tailwind CSS
 
 # Project-08
 
@@ -28,7 +28,7 @@
 
 ---
 
-![time taken](https://img.shields.io/badge/Project-08-green) ![time taken](https://img.shields.io/badge/VSCode%20Clone-Tailwind%20%26%20CSS-orange)
+![time taken](https://img.shields.io/badge/Project-08-green) ![time taken](https://img.shields.io/badge/CreditCard%20Landing%20Page-Tailwind%20%26%20CSS-orange)
 
 
 
