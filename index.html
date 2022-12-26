@@ -5,79 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creadit Card Landing Page</title>
+
+    <script
+      src="https://kit.fontawesome.com/fb22eebb87.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            ssm: "318px",
+            // => @media (min-width: 320px) { ... }
+
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+        },
+      };
+    </script>
   </head>
 
   <body class="container mx-auto overflow-x-hidden bg-[#151515]">
     <!----- Nav Section ------->
     <div class="bg-[#151515] w-screen container mx-auto">
-      <nav class="pt-4 flex flex-row justify-between items-center px-28">
-        <img src="./Assets/Icons/Logo.svg" alt="nav-logo" />
-        <ul class="flex flex-row justify-around items-center gap-8 text-white">
+      <nav
+        class="pt-4 flex flex-row justify-between items-center ssm:px-10 md:px-28 bg-gray-600"
+      >
+        <img
+          class="ssm:w-[80px] md:w-[100px]"
+          src="./Assets/Icons/Logo.svg"
+          alt="nav-logo"
+        />
+        <ul
+          class="md:flex md:flex-row md:justify-around md:items-center gap-8 text-white ssm:hidden"
+        >
           <li>Home</li>
           <li>Features</li>
           <li>Pricing</li>
           <li>About us</li>
         </ul>
-
-        <div class="flex flex-row justify-center items-center gap-6">
+        <!-- nav right button section -->
+        <div
+          class="md:flex md:flex-row md:justify-center md:items-center md:gap-6 ssm:hidden"
+        >
           <span class="text-white">Eng</span>
           <span class="text-white text-[9px] -ml-2">v</span>
-          <div class="flex flex-row justify-around items-center relative block">
+          <div class="flex flex-row justify-center items-center relative block">
             <img src="./Assets/Icons/btn-pink-bg.svg" alt="btn-pink-img" />
             <span class="text-white absolute w-[90px] left-6">Contact Us</span>
           </div>
         </div>
+        <!-- for ssm screen, barline -->
+        <i class="fa-solid fa-bars text-white md:hidden"></i>
       </nav>
 
       <!----- Header Section ------->
       <header
-        class="container mx-auto max-w-full flex flex-row justify-around items-center h-[80vh] mt-8 px-28 relative"
+        class="container mx-auto max-w-full flex ssm:flex-col md:flex-row ssm:justify-center md:justify-around items-center h-[80vh] mt-8 ssm:px-10 md:px-28 relative"
       >
         <div
-          class="text-[#fff] flex flex-col justify-center items-start w-[100vw]"
+          class="text-[#fff] flex flex-col justify-center ssm:items-center md:items-start ssm:text-center md:text-left w-[100vw]"
         >
-          <h1 class="text-7xl w-[800px]">
+          <h1 class="ssm:text-[28px] md:text-7xl ssm:w-[300px] md:w-[800px]">
             Simplify All Transactions in
             <span class="text-[#F637EC] font-medium">One Card</span>
           </h1>
-          <p class="mt-10 w-[450px]">
+          <p
+            class="mt-10 ssm:w-[250px] ssm:text-[14px] md:text-[18px] ssm:text-gray-400 md:w-[450px]"
+          >
             Hurry up and join now, with this you can manage your daily finances
             easily and safely
           </p>
-          <div class="flex flex-row justify-around items-center relative my-16">
-            <img src="./Assets/Icons/btn-pink-bg.svg" alt="btn-pink-img" />
-            <span class="text-white absolute w-[100px] left-6"
+          <div
+            class="flex flex-row ssm:justify-center md:justify-around ssm:items-center md:relative my-16"
+          >
+            <img
+              class="ssm:w-[40px]"
+              src="./Assets/Icons/btn-pink-bg.svg"
+              alt="btn-pink-img"
+            />
+            <span
+              class="text-white w-[100px] md:absolute md:left-6 ssm:text-[13px] -ml-5"
               >GET STARTED</span
             >
           </div>
 
-          <div class="flex flex-row gap-x-4">
-            <div class="flex flex-row gap-x-4">
-              <span class="text-4xl font-medium"
+          <div
+            class="flex flex-row ssm:justify-center md:justify-start ssm:items-center ssm:gap-x-4 md:gap-x-4 ssm:w-[320px] md:w-[100%]"
+          >
+            <!-- 42K section -->
+            <div
+              class="flex ssm:flex-col md:flex-row justify-center items-center gap-x-4"
+            >
+              <span class="ssm:text-xl md:text-4xl font-medium"
                 >42K<span class="text-[#F637EC]">+</span></span
               >
-              <div class="flex flex-col">
-                <span class="text-xl">Happy</span>
-                <span class="text-xl">Active User</span>
+              <div class="flex flex-col ssm:items-center">
+                <span class="md:text-xl">Happy</span>
+                <span class="md:text-xl">Active User</span>
               </div>
             </div>
-
-            <div class="w-[1px] h-[55px] from-slate-200"></div>
-
-            <div class="flex flex-row gap-x-4">
-              <span class="text-4xl font-medium"
+            <!-- verticle line devider -->
+            <div class="w-[1px] h-[55px] bg-gray-600"></div>
+            <!-- 12K section -->
+            <div
+              class="flex ssm:flex-col md:flex-row justify-center items-center gap-x-4"
+            >
+              <span class="ssm:text-xl md:text-4xl font-medium"
                 >12K <span class="text-[#F637EC]">+</span>
               </span>
-              <div class="flex flex-col">
-                <span class="text-xl">Years</span>
-                <span class="text-xl">Experience</span>
+              <div class="flex flex-col ssm:items-center">
+                <span class="md:text-xl">Years</span>
+                <span class="md:text-xl">Experience</span>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="w-fit">
+        <!-- header right-img section -->
+        <div class="w-fit ssm:hidden md:block">
           <img
             class="absolute w-[750px] top-[-50px] right-[20px]"
             src="./Assets/Photos/backCards.png"
@@ -91,39 +150,68 @@
         </div>
       </header>
     </div>
-
+    <!-- 5 logo container -->
     <section
       aria-label="logo-container"
-      class="flex flex-row items-center justify-around h-[25vh] px-28 bg-[#292929]"
+      class="grid grid-cols-2 grid-rows-2 justify-items-center items-center md:flex md:flex-row md:items-center md:justify-around h-[25vh] md:px-28 bg-[#292929]"
     >
-      <img class="w-[130px]" src="./Assets/Icons/Logo.svg" alt="logo" />
-      <img class="w-[130px]" src="./Assets/Icons/Logo.svg" alt="logo" />
-      <img class="w-[130px]" src="./Assets/Icons/Logo.svg" alt="logo" />
-      <img class="w-[130px]" src="./Assets/Icons/Logo.svg" alt="logo" />
-      <img class="w-[130px]" src="./Assets/Icons/Logo.svg" alt="logo" />
+      <img
+        class="ssm:w-[80px] md:w-[130px]"
+        src="./Assets/Icons/Logo.svg"
+        alt="logo"
+      />
+      <img
+        class="ssm:w-[80px] md:w-[130px]"
+        src="./Assets/Icons/Logo.svg"
+        alt="logo"
+      />
+      <img
+        class="ssm:w-[80px] md:w-[130px]"
+        src="./Assets/Icons/Logo.svg"
+        alt="logo"
+      />
+      <img
+        class="ssm:w-[80px] md:w-[130px]"
+        src="./Assets/Icons/Logo.svg"
+        alt="logo"
+      />
+      <img
+        class="ssm:hidden md:block ssm:w-[80px] md:w-[130px]"
+        src="./Assets/Icons/Logo.svg"
+        alt="logo"
+      />
     </section>
-
+    <!-- payment-service-section -->
     <section
       aria-label="payment-service-section"
-      class="flex flex-col gap-8 px-28 py-16"
+      class="flex flex-col gap-8 md:px-28 py-16"
     >
-      <div class="flex flex-row justify-between items-center text-white">
-        <h2 class="text-[65px] w-[600px] leading-[80px]">
+      <div
+        class="flex ssm:flex-col ssm:justify-center ssm:gap-6 md:gap-0 md:flex-row md:justify-between items-center text-white ssm:text-center"
+      >
+        <h2
+          class="ssm:text-[35px] md:text-[65px] md:w-[600px] md:leading-[80px]"
+        >
           The best payment service for
           <span class="text-[#F637EC] font-medium">your transactions.</span>
         </h2>
-        <p class="text-xl w-[400px]">
+        <p
+          class="ssm:text-[15px] ssm:text-gray-400 ssm:w-[280px] md:text-xl md:w-[400px]"
+        >
           The following are the services we provide to users. with the services
           we maximize it is hoped that users are satisfied with what we provide.
         </p>
       </div>
-
-      <div class="flex flex-row justify-center items-center gap-20 mt-28">
+      <!-- three payment container -->
+      <div
+        class="flex ssm:flex-col md:flex-row justify-center items-center gap-20 mt-28"
+      >
+        <!-- box 1 -->
         <div
-          class="flex flex-col justify-center items-center bg-[#272727] border-2 border-solid border-gray-400 w-[300px] h-[300px]"
+          class="flex flex-col justify-center items-center bg-[#272727] border-2 border-solid border-gray-400 ssm:w-[250px] ssm:h-[250px] md:w-[300px] md:h-[300px]"
         >
           <img
-            class="w-[100px]"
+            class="ssm:w-[80px] md:w-[100px]"
             src="./Assets/Icons/dollar-circle.svg"
             alt=""
           />
@@ -131,11 +219,15 @@
             >Free transactions fee</span
           >
         </div>
-
+        <!-- box 2 -->
         <div
-          class="flex flex-col justify-center items-center bg-[#504F4E] border-2 border-solid border-gray-400 w-[300px] h-[300px] mb-28"
+          class="flex flex-col justify-center items-center bg-[#504F4E] border-2 border-solid border-gray-400 ssm:w-[250px] ssm:h-[250px] md:w-[300px] md:h-[300px] md:mb-28"
         >
-          <img class="w-[100px]" src="./Assets/Icons/cloud-add.svg" alt="" />
+          <img
+            class="ssm:w-[80px] md:w-[100px]"
+            src="./Assets/Icons/cloud-add.svg"
+            alt=""
+          />
           <span class="text-[22px] font-medium text-white mt-5 text-center">
             Easy to access
           </span>
@@ -143,18 +235,22 @@
             >anytime and anywhere</span
           >
         </div>
-
+        <!-- box 3 -->
         <div
-          class="flex flex-col justify-center items-center bg-[#272727] border-2 border-solid border-gray-400 w-[300px] h-[300px]"
+          class="flex flex-col justify-center items-center bg-[#272727] border-2 border-solid border-gray-400 ssm:w-[250px] ssm:h-[250px] md:w-[300px] md:h-[300px]"
         >
-          <img class="w-[100px]" src="./Assets/Icons/lock.svg" alt="" />
+          <img
+            class="ssm:w-[80px] md:w-[100px]"
+            src="./Assets/Icons/lock.svg"
+            alt=""
+          />
           <span class="text-[22px] font-medium text-white mt-5 text-center"
             >Guaranteed Safety</span
           >
         </div>
       </div>
     </section>
-
+    <!-- card-choices-section -->
     <section
       aria-label="card-choices"
       class="flex flex-col justify-center items-center bg-[#FCEFFB] pt-20"
