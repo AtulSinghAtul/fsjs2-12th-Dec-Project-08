@@ -18,7 +18,8 @@
           screens: {
             ssm: "318px",
             // => @media (min-width: 320px) { ... }
-
+            px425: "425px",
+            // => @media (min-width: 425px) { ... }
             sm: "640px",
             // => @media (min-width: 640px) { ... }
 
@@ -39,9 +40,9 @@
     </script>
   </head>
 
-  <body class="container mx-auto overflow-x-hidden bg-[#151515]">
+  <body class="overflow-x-hidden bg-[#151515]">
     <!----- Nav Section ------->
-    <div class="bg-[#151515] w-screen container mx-auto">
+    <div class="bg-[#151515] w-screen">
       <nav
         class="pt-4 flex flex-row justify-between items-center ssm:px-10 md:px-28 bg-gray-600"
       >
@@ -75,17 +76,17 @@
 
       <!----- Header Section ------->
       <header
-        class="container mx-auto max-w-full flex ssm:flex-col md:flex-row ssm:justify-center md:justify-around items-center h-[80vh] mt-8 ssm:px-10 md:px-28 relative"
+        class="container mx-auto max-w-full flex ssm:flex-col md:flex-row ssm:justify-center md:justify-around items-center h-[80vh] my-8 ssm:px-10 md:px-28 relative"
       >
         <div
           class="text-[#fff] flex flex-col justify-center ssm:items-center md:items-start ssm:text-center md:text-left w-[100vw]"
         >
-          <h1 class="ssm:text-[28px] md:text-7xl ssm:w-[300px] md:w-[800px]">
+          <h1 class="ssm:text-[35px] md:text-7xl ssm:w-[80%] md:w-[800px]">
             Simplify All Transactions in
             <span class="text-[#F637EC] font-medium">One Card</span>
           </h1>
           <p
-            class="mt-10 ssm:w-[250px] ssm:text-[14px] md:text-[18px] ssm:text-gray-400 md:w-[450px]"
+            class="mt-10 ssm:text-[14px] md:text-[18px] ssm:text-gray-400 ssm:w-[70%] md:w-[450px]"
           >
             Hurry up and join now, with this you can manage your daily finances
             easily and safely
@@ -105,7 +106,7 @@
           </div>
 
           <div
-            class="flex flex-row ssm:justify-center md:justify-start ssm:items-center ssm:gap-x-4 md:gap-x-4 ssm:w-[320px] md:w-[100%]"
+            class="flex flex-row ssm:justify-center md:justify-start ssm:items-center ssm:gap-x-4 px425:gap-x-10 md:gap-x-4 ssm:w-[320px] md:w-[100%]"
           >
             <!-- 42K section -->
             <div
@@ -153,7 +154,7 @@
     <!-- 5 logo container -->
     <section
       aria-label="logo-container"
-      class="grid grid-cols-2 grid-rows-2 justify-items-center items-center md:flex md:flex-row md:items-center md:justify-around h-[25vh] md:px-28 bg-[#292929]"
+      class="grid grid-cols-2 grid-rows-2 justify-items-center items-center md:flex md:flex-row md:items-center md:justify-around h-[25vh] md:px-20 mt-28 bg-[#292929]"
     >
       <img
         class="ssm:w-[80px] md:w-[130px]"
@@ -187,16 +188,16 @@
       class="flex flex-col gap-8 md:px-28 py-16"
     >
       <div
-        class="flex ssm:flex-col ssm:justify-center ssm:gap-6 md:gap-0 md:flex-row md:justify-between items-center text-white ssm:text-center"
+        class="flex ssm:flex-col ssm:justify-center ssm:gap-6 md:gap-0 md:flex-row md:justify-between items-center text-white ssm:text-center px425:px-10"
       >
         <h2
-          class="ssm:text-[35px] md:text-[65px] md:w-[600px] md:leading-[80px]"
+          class="ssm:text-[35px] md:text-[65px] ssm:w-[100%] md:w-[600px] md:leading-[80px]"
         >
           The best payment service for
           <span class="text-[#F637EC] font-medium">your transactions.</span>
         </h2>
         <p
-          class="ssm:text-[15px] ssm:text-gray-400 ssm:w-[280px] md:text-xl md:w-[400px]"
+          class="ssm:text-[15px] ssm:text-gray-400 ssm:w-[75%] md:text-xl md:w-[400px]"
         >
           The following are the services we provide to users. with the services
           we maximize it is hoped that users are satisfied with what we provide.
@@ -204,7 +205,7 @@
       </div>
       <!-- three payment container -->
       <div
-        class="flex ssm:flex-col md:flex-row justify-center items-center gap-20 mt-28"
+        class="flex ssm:flex-col md:flex-row justify-center items-center gap-20 ssm:mt-20 md:mt-28"
       >
         <!-- box 1 -->
         <div
@@ -253,37 +254,50 @@
     <!-- card-choices-section -->
     <section
       aria-label="card-choices"
-      class="flex flex-col justify-center items-center bg-[#FCEFFB] pt-20"
+      class="flex flex-col justify-center items-center bg-[#FCEFFB] pt-20 ssm:text-center ssm:px-10 md:px-28"
     >
-      <h2 class="text-6xl font-normal mb-4">Unique and interesting</h2>
-      <h2 class="text-6xl font-bold text-[#F637EC] mb-16">card choices</h2>
-      <p class="w-[500px] text-center text-gray-700">
+      <h2 class="ssm:text-4xl md:text-6xl font-normal mb-4">
+        Unique and interesting
+      </h2>
+      <h2 class="ssm:text-4xl md:text-6xl font-bold text-[#F637EC] mb-16">
+        card choices
+      </h2>
+      <p class="ssm:w-[300px] md:w-[500px] text-center text-gray-700">
         We provide card editing features, where users can edit unique cards
         according to the wishes and preferences of the users themselves.
       </p>
-      <img class="w-[800px]" src="./Assets/Photos/VCards.png" alt="" />
+      <img
+        class="ssm:w-[500px] md:w-[800px]"
+        src="./Assets/Photos/VCards.png"
+        alt=""
+      />
     </section>
-
+    <!-- rating-section container -->
     <section
       aria-label="rating-section"
-      class="flex flex-col justify-center items-center pt-20 px-28"
+      class="flex flex-col justify-center items-center pt-20 md:px-28 w-screen"
     >
       <h2
-        class="text-6xl text-white text-center font-normal mb-6 w-[800px] leading-[90px]"
+        class="ssm:text-4xl md:text-6xl text-white text-center font-normal mb-6 ssm:w-[80%] md:w-[800px] md:leading-[90px]"
       >
         Customers are satisfied with
         <span class="text-[#F637EC] font-bold">the features</span>
         we provide
       </h2>
 
-      <p class="w-[500px] text-[19px] text-center text-gray-400 mb-24">
+      <p
+        class="ssm:w-[70%] md:w-[500px] md:text-[19px] text-center text-gray-400 mb-24"
+      >
         With the various features that we provide, therefore many customers like
         the features that we provide.
       </p>
 
-      <div class="grid grid-cols-2 grid-rows-2 gap-20">
+      <div
+        class="grid ssm:grid-cols-1 ssm:grid-rows-1 md:grid-cols-2 md:grid-rows-2 justify-items-center items-center gap-20"
+      >
+        <!-- box 1 -->
         <div
-          class="flex flex-col justify-center items-start gap-4 bg-[#514F4E] border-2 border-solid border-gray-400 w-[400px] h-[250px] px-6"
+          class="flex flex-col justify-center items-start md:gap-4 bg-[#514F4E] border-2 border-solid border-gray-400 ssm:w-[300px] ssm:h-[280px] md:w-[400px] md:h-[250px] px-6"
         >
           <img class="w-[130px]" src="./Assets/Icons/5stars.svg" alt="" />
           <span class="text-white mt-5 text-[16px]"
@@ -295,9 +309,9 @@
             <span class="text-white">Wangon, Indonesia</span>
           </div>
         </div>
-
+        <!-- box 2 -->
         <div
-          class="flex flex-col justify-center items-start gap-4 bg-[#151515] border-2 border-solid border-gray-400 w-[400px] h-[250px] px-6"
+          class="flex flex-col justify-center items-start gap-4 bg-[#151515] border-2 border-solid border-gray-400 ssm:w-[300px] ssm:h-[280px] md:w-[400px] md:h-[250px] px-6"
         >
           <img class="w-[130px]" src="./Assets/Icons/4stars.svg" alt="" />
           <span class="text-white mt-5 text-[16px]"
@@ -309,9 +323,9 @@
             <span class="text-white">Wangon, Indonesia</span>
           </div>
         </div>
-
+        <!-- box 3 -->
         <div
-          class="flex flex-col justify-center items-start gap-4 bg-[#151515] border-2 border-solid border-gray-400 w-[400px] h-[250px] px-6"
+          class="flex flex-col justify-center items-start gap-4 bg-[#151515] border-2 border-solid border-gray-400 ssm:w-[300px] ssm:h-[280px] md:w-[400px] md:h-[250px] px-6"
         >
           <img class="w-[130px]" src="./Assets/Icons/4stars.svg" alt="" />
           <span class="text-white mt-5 text-[16px]"
@@ -323,9 +337,9 @@
             <span class="text-white">Wangon, Indonesia</span>
           </div>
         </div>
-
+        <!-- box 4 -->
         <div
-          class="flex flex-col justify-center items-start gap-4 bg-[#151515] border-2 border-solid border-gray-400 w-[400px] h-[250px] px-6"
+          class="flex flex-col justify-center items-start gap-4 bg-[#151515] border-2 border-solid border-gray-400 ssm:w-[300px] ssm:h-[280px] md:w-[400px] md:h-[250px] px-6"
         >
           <img class="w-[130px]" src="./Assets/Icons/5stars.svg" alt="" />
           <span class="text-white mt-5 text-[16px]"
@@ -338,68 +352,91 @@
           </div>
         </div>
       </div>
+      <!-- dot section -->
+      <div class="flex flex-row justify-center items center gap-4 my-20">
+        <div class="w-[80px] h-[15px] bg-[#F637EC] rounded-[50px]"></div>
+        <div class="w-[15px] h-[15px] bg-gray-600 rounded-[100%]"></div>
+        <div class="w-[15px] h-[15px] bg-gray-600 rounded-[100%]"></div>
+        <div class="w-[15px] h-[15px] bg-gray-600 rounded-[100%]"></div>
+      </div>
+    </section>
 
-      <div class="my-24 relative w-screen">
-        <div class="flex flex-row justify-center items center gap-4 mb-20">
-          <div class="w-[80px] h-[15px] bg-[#F637EC] rounded-[50px]"></div>
-          <div class="w-[15px] h-[15px] bg-gray-600 rounded-[100%]"></div>
-          <div class="w-[15px] h-[15px] bg-gray-600 rounded-[100%]"></div>
-          <div class="w-[15px] h-[15px] bg-gray-600 rounded-[100%]"></div>
-        </div>
-
-        <div class="">
+    <section class="my-4 w-screen ssm:h-fit relative border border-gray-400">
+      <!-- -------- diamond text & image container ---------- -->
+      <div>
+        <!-------- diamond text container --------->
+        <div
+          class="absolute -translate-y-2/4 -translate-x-2/4 top-[50%] left-[50%] z-20 w-[100%]"
+        >
           <h2
-            class="text-white text-7xl font-medium w-[60%] absolute -translate-y-2/4 -translate-x-2/4 left-[50%] z-20 text-center mt-[15%]"
+            class="text-white ssm:text-[6vw] w-[76%] md:font-medium mx-auto text-center ssm:mb-4 md:mb-10 lg:mb-14 leading-8 px425:leading-10 sm:leading-[50px] md:leading-[60px] lg:leading-[80px] xl:leading-[100px]"
           >
             Let's start
-            <span class="text-[#151515] text-6xl font-bold">customing</span>
+            <span
+              class="text-[#151515] ssm:text-[6vw] ssm:font-medium md:font-bold"
+              >customing</span
+            >
             your card now
           </h2>
+          <div class="text-white flex flex-row justify-center items-center">
+            <img
+              class="ssm:w-[35px] md:w-[65px]"
+              src="./Assets/Icons/btn-pink-bg.svg"
+              alt=""
+            />
+            <span class="ssm:text-[10px] md:text-[18px] md:font-medium -ml-6"
+              >GET STARTED</span
+            >
+          </div>
+        </div>
+        <!-- ------ image section ------- -->
+        <div class="">
           <img
-            class="absolute -z-10 w-[100%]"
+            class="w-[100%] absolute -z-20"
             src="./Assets/Photos/Rectangle 6773.png"
             alt=""
           />
           <img
-            class="absolute z-0 w-[100%]"
+            class="w-[100%] z-20"
             src="./Assets/Photos/Rectangle 6774.png"
             alt=""
           />
 
-          <div class="flex flex-row">
+          <div
+            class="flex flex-row justify-between items-center w-[100%] h-fit absolute top-[0px]"
+          >
             <img
-              class="absolute left-0 z-0 w-[45%] h-[545px] rotate-180"
+              class="rotate-180 w-[40%]"
               src="./Assets/Photos/Diamond-left.png"
               alt=""
             />
             <img
-              class="absolute right-0 z-0 w-[45%] rotate-180 h-[555px] mt-10"
+              class="rotate-180 w-[40%]"
               src="./Assets/Photos/Diamond-right.png"
               alt=""
             />
-          </div>
-
-          <div
-            class="absolute text-white flex flex-row justify-center items-center -translate-y-2/4 -translate-x-2/4 left-[50%] mt-[25%]"
-          >
-            <img class="w-[55px]" src="./Assets/Icons/btn-pink-bg.svg" alt="" />
-            <span class="text-[18px] font-medium -ml-6">GET STARTED</span>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="w-screen h-[300px] pb-8 px-28 mt-[200px] align-middle">
+    <footer
+      class="flex flex-row justify-between ssm:items-start md:items-center w-screen py-20 md:py-24 ssm:px-10 md:px-28"
+    >
+      <img
+        class="ssm:w-[80px] md:w-[100px]"
+        src="./Assets/Icons/Logo.svg"
+        alt=""
+      />
       <div
-        class="flex flex-row justify-between items-center mt-[500px] w-[55vw] h-[300px]"
+        class="ssm:flex ssm:flex-col sm:flex-row ssm:justify-center ssm:items-start gap-2 text-white"
       >
-        <img src="./Assets/Icons/Logo.svg" alt="" />
-        <div class="text-white">
-          <span class="mr-4">Branding</span>
-          <span class="mr-4">Contact Us</span>
-          <span class="mr-4">Privacy Policy</span>
-          <span class="mr-4">FAQs</span>
-        </div>
+        <span class="ssm:text-[12px] md:text-[16px] md:mr-4">Branding</span>
+        <span class="ssm:text-[12px] md:text-[16px] md:mr-4">Contact Us</span>
+        <span class="ssm:text-[12px] md:text-[16px] md:mr-4"
+          >Privacy Policy</span
+        >
+        <span class="ssm:text-[12px] md:text-[16px] md:mr-4">FAQs</span>
       </div>
     </footer>
   </body>
