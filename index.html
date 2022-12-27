@@ -42,9 +42,9 @@
 
   <body class="overflow-x-hidden bg-[#151515]">
     <!----- Nav Section ------->
-    <div class="bg-[#151515] w-screen">
+    <div class="w-screen">
       <nav
-        class="pt-4 flex flex-row justify-between items-center ssm:px-10 md:px-28 bg-gray-600"
+        class="pt-4 flex flex-row justify-between items-center ssm:px-10 md:px-28"
       >
         <img
           class="ssm:w-[80px] md:w-[100px]"
@@ -52,7 +52,7 @@
           alt="nav-logo"
         />
         <ul
-          class="md:flex md:flex-row md:justify-around md:items-center gap-8 text-white ssm:hidden"
+          class="lg:flex lg:flex-row lg:justify-around lg:items-center gap-8 text-white ssm:hidden"
         >
           <li>Home</li>
           <li>Features</li>
@@ -76,75 +76,83 @@
 
       <!----- Header Section ------->
       <header
-        class="container mx-auto max-w-full flex ssm:flex-col md:flex-row ssm:justify-center md:justify-around items-center h-[80vh] my-8 ssm:px-10 md:px-28 relative"
+        class="container mx-auto max-w-full flex ssm:flex-col md:flex-row ssm:justify-center md:justify-around items-center my-8 md:my-14 ssm:px-10 md:px-28 relative"
       >
         <div
-          class="text-[#fff] flex flex-col justify-center ssm:items-center md:items-start ssm:text-center md:text-left w-[100vw]"
+          class="text-[#fff] flex flex-col justify-center ssm:items-center lg:items-start ssm:text-center lg:text-left w-[100vw]"
         >
-          <h1 class="ssm:text-[35px] md:text-7xl ssm:w-[80%] md:w-[800px]">
+          <h1
+            class="ssm:text-[35px] md:text-6xl xl:text-7xl ssm:w-[80%] md:mt-5 md:w-[800px] md:px-3"
+          >
             Simplify All Transactions in
             <span class="text-[#F637EC] font-medium">One Card</span>
           </h1>
           <p
-            class="mt-10 ssm:text-[14px] md:text-[18px] ssm:text-gray-400 ssm:w-[70%] md:w-[450px]"
+            class="mt-10 ssm:text-[15px] md:text-[18px] lg:text-[20px] ssm:text-gray-400 ssm:w-[70%] md:w-[450px]"
           >
             Hurry up and join now, with this you can manage your daily finances
             easily and safely
           </p>
           <div
-            class="flex flex-row ssm:justify-center md:justify-around ssm:items-center md:relative my-16"
+            class="flex flex-row ssm:justify-center ssm:items-center md:relative my-16"
           >
             <img
-              class="ssm:w-[40px]"
+              class="ssm:w-[40px] md:w-[60px]"
               src="./Assets/Icons/btn-pink-bg.svg"
               alt="btn-pink-img"
             />
             <span
-              class="text-white w-[100px] md:absolute md:left-6 ssm:text-[13px] -ml-5"
+              class="text-white ssm:text-[10px] text-[15px] lg:text-[18px] -ml-5"
               >GET STARTED</span
             >
+            <img
+              class="ssm:w-[40px] md:w-[70px] ml-1"
+              src="./Assets/Icons/RightArrow.svg"
+              alt=""
+            />
           </div>
 
           <div
-            class="flex flex-row ssm:justify-center md:justify-start ssm:items-center ssm:gap-x-4 px425:gap-x-10 md:gap-x-4 ssm:w-[320px] md:w-[100%]"
+            class="flex flex-row ssm:justify-center lg:justify-start ssm:items-center ssm:gap-x-4 px425:gap-x-10 md:gap-x-20 ssm:w-[320px] md:w-[100%]"
           >
             <!-- 42K section -->
             <div
-              class="flex ssm:flex-col md:flex-row justify-center items-center gap-x-4"
+              class="flex ssm:flex-col lg:flex-row justify-center items-center lg:gap-x-4 md:gap-y-4"
             >
               <span class="ssm:text-xl md:text-4xl font-medium"
                 >42K<span class="text-[#F637EC]">+</span></span
               >
-              <div class="flex flex-col ssm:items-center">
-                <span class="md:text-xl">Happy</span>
+              <div class="flex flex-col ssm:items-center lg:items-start">
+                <span class="md:text-xl md:mb-2">Happy</span>
                 <span class="md:text-xl">Active User</span>
               </div>
             </div>
+
             <!-- verticle line devider -->
-            <div class="w-[1px] h-[55px] bg-gray-600"></div>
-            <!-- 12K section -->
+            <img src="./Assets/Icons/Vector 402.svg" alt="" />
+
             <div
-              class="flex ssm:flex-col md:flex-row justify-center items-center gap-x-4"
+              class="flex ssm:flex-col lg:flex-row justify-center items-center lg:gap-x-4 md:gap-y-4"
             >
               <span class="ssm:text-xl md:text-4xl font-medium"
                 >12K <span class="text-[#F637EC]">+</span>
               </span>
-              <div class="flex flex-col ssm:items-center">
-                <span class="md:text-xl">Years</span>
+              <div class="flex flex-col ssm:items-center lg:items-start">
+                <span class="md:text-xl md:mb-2">Years</span>
                 <span class="md:text-xl">Experience</span>
               </div>
             </div>
           </div>
         </div>
         <!-- header right-img section -->
-        <div class="w-fit ssm:hidden md:block">
+        <div class="w-fit ssm:hidden lg:block">
           <img
-            class="absolute w-[750px] top-[-50px] right-[20px]"
+            class="absolute w-[750px] ssm:top-[-50px] -z-20 ssm:right-[20px]"
             src="./Assets/Photos/backCards.png"
             alt="backCards"
           />
           <img
-            class="absolute w-[750px] top-[10px] right-[-190px]"
+            class="absolute w-[750px] top-[10px] right-[-190px] -z-10"
             src="./Assets/Photos/frontCards.png"
             alt="frontCards"
           />
@@ -188,16 +196,16 @@
       class="flex flex-col gap-8 md:px-28 py-16"
     >
       <div
-        class="flex ssm:flex-col ssm:justify-center ssm:gap-6 md:gap-0 md:flex-row md:justify-between items-center text-white ssm:text-center px425:px-10"
+        class="flex ssm:flex-col ssm:justify-center ssm:gap-6 md:gap-20 lg:flex-row lg:justify-between items-center text-white ssm:text-center lg:text-left px425:px-10"
       >
         <h2
-          class="ssm:text-[35px] md:text-[65px] ssm:w-[100%] md:w-[600px] md:leading-[80px]"
+          class="ssm:text-[35px] md:text-6xl xl:text-7xl ssm:w-[100%] md:w-[90%] lg:w-[600px] md:leading-[80px]"
         >
           The best payment service for
           <span class="text-[#F637EC] font-medium">your transactions.</span>
         </h2>
         <p
-          class="ssm:text-[15px] ssm:text-gray-400 ssm:w-[75%] md:text-xl md:w-[400px]"
+          class="ssm:text-[15px] md:text-[20px] lg:text-[22px] ssm:text-gray-400 ssm:w-[75%] lg:w-[400px]"
         >
           The following are the services we provide to users. with the services
           we maximize it is hoped that users are satisfied with what we provide.
@@ -205,7 +213,7 @@
       </div>
       <!-- three payment container -->
       <div
-        class="flex ssm:flex-col md:flex-row justify-center items-center gap-20 ssm:mt-20 md:mt-28"
+        class="flex ssm:flex-col md:flex-row justify-center items-center md:flex-wrap ssm:gap-20 md:gap-8 lg:gap-20 ssm:mt-20 md:mt-28"
       >
         <!-- box 1 -->
         <div
@@ -222,7 +230,7 @@
         </div>
         <!-- box 2 -->
         <div
-          class="flex flex-col justify-center items-center bg-[#504F4E] border-2 border-solid border-gray-400 ssm:w-[250px] ssm:h-[250px] md:w-[300px] md:h-[300px] md:mb-28"
+          class="flex flex-col justify-center items-center bg-[#504F4E] border-2 border-solid border-gray-400 ssm:w-[250px] ssm:h-[250px] md:w-[300px] md:h-[300px] xl:mb-28"
         >
           <img
             class="ssm:w-[80px] md:w-[100px]"
@@ -262,7 +270,9 @@
       <h2 class="ssm:text-4xl md:text-6xl font-bold text-[#F637EC] mb-16">
         card choices
       </h2>
-      <p class="ssm:w-[300px] md:w-[500px] text-center text-gray-700">
+      <p
+        class="ssm:w-[300px] md:w-[500px] text-center text-gray-700 ssm:text-[15px] md:text-[18px] lg:text-[20px]"
+      >
         We provide card editing features, where users can edit unique cards
         according to the wishes and preferences of the users themselves.
       </p>
@@ -278,7 +288,7 @@
       class="flex flex-col justify-center items-center pt-20 md:px-28 w-screen"
     >
       <h2
-        class="ssm:text-4xl md:text-6xl text-white text-center font-normal mb-6 ssm:w-[80%] md:w-[800px] md:leading-[90px]"
+        class="ssm:text-4xl md:text-6xl xl:text-7xl text-white text-center font-normal mb-6 ssm:w-[80%] md:w-[800px] md:leading-[90px]"
       >
         Customers are satisfied with
         <span class="text-[#F637EC] font-bold">the features</span>
@@ -293,7 +303,7 @@
       </p>
 
       <div
-        class="grid ssm:grid-cols-1 ssm:grid-rows-1 md:grid-cols-2 md:grid-rows-2 justify-items-center items-center gap-20"
+        class="grid ssm:grid-cols-1 ssm:grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 justify-items-center items-center gap-20"
       >
         <!-- box 1 -->
         <div
@@ -361,7 +371,7 @@
       </div>
     </section>
 
-    <section class="my-4 w-screen ssm:h-fit relative border border-gray-400">
+    <section class="my-4 w-screen ssm:h-fit relative">
       <!-- -------- diamond text & image container ---------- -->
       <div>
         <!-------- diamond text container --------->
@@ -387,6 +397,11 @@
             <span class="ssm:text-[10px] md:text-[18px] md:font-medium -ml-6"
               >GET STARTED</span
             >
+            <img
+              class="w-[40px] md:w-[70px] ml-1"
+              src="./Assets/Icons/RightArrow.svg"
+              alt=""
+            />
           </div>
         </div>
         <!-- ------ image section ------- -->
