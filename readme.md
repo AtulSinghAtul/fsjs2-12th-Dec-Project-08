@@ -19,6 +19,7 @@
 ## Name : Atul Singh
 
 ---
+- Fully Responsive Page
 
 ## What I have learned during this Project?
 
@@ -32,5 +33,6 @@
 
 
 
+![credit-card-landing-page](https://user-images.githubusercontent.com/112545072/210030612-97be02af-e2bf-4cc0-94f5-6b27da485102.png)
 
-![Project 1](./Credit%20card%20landing%20page.png)
+
