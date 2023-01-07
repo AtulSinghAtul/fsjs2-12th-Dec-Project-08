@@ -16,7 +16,7 @@
 - ### [Youtube Link](https://www.youtube.com/channel/UCBNc9Vs9mAFxnAKjzWRqDFQ)
 - ### [Hashnode Link](https://atulsinghatul.hashnode.dev/)
 
-## Time-taken: 7hrs
+## Time-taken: 07hrs
 
 - ### _From Scratch to make credit card landing page time taken_ - ![time taken](https://img.shields.io/badge/2-hrs-yellowgreen)
 
